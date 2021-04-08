@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #1f1f1f;
+  color: #dbdbdb;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px;
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(10, 10, 10, 0.801),
+      rgba(5, 5, 5, 0.808)
+    ),
+    url(/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin: 0;
+  font-size: 250%;
+  font-weight: 300;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  word-spacing: 2px;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 280%;
+}
+
+h2 {
+  font-family: 'Lobster Two';
+
+  margin-bottom: 30px;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #dbdbdb;
+  content: ' ';
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 18px;
+}
+
+p {
+  line-height: 145%;
+  font-size: 100%;
+  text-align: justify;
+  word-spacing: 2px;
+}
+.about::first-letter {
+  font-size: 150%;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  line-height: 120%;
+  font-size: 90%;
+  vertical-align: middle;
+}
+.icon {
+  margin-right: 5px;
+}
+
+/***                    Home page text box                               ***/
+
+.text-box {
+  color: #dbdbdb;
+  position: absolute;
+  font-weight: 10%;
+  width: 1140px;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.edit {
+  font-weight: 500;
+}
+
+/***                    NAVIGATION                               ***/
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #dbdbdb;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 300;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+  padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  /* change color later */
+  border-bottom: 2px solid #dfdfdf;
+}
+
+/* Links                */
+
+a:link,
+a:visited {
+  color: #dbdbdb;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover,
+a:active {
+  color: #dbdbdb;
+  text-decoration: none;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+/*                Button style          */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-down:link,
+.btn-down:visited {
+  background-color: #dbdbdb;
+  border: 1px solid #dbdbdb;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+}
+
+.btn-down:hover,
+.btn-down:active {
+  background-color: #1f1f1f;
+  color: #dbdbdb;
+  border: 1px solid #1f1f1f;
+}
+.btn-show:link,
+.btn-show:visited {
+  transition: font-size 0.2s;
+}
+
+.btn-show:hover,
+.btn-show:active {
+  font-size: 108%;
+  border: 0;
+}
+/* section about */
+
+/* Profile pic       */
+.profile {
+  overflow: hidden;
+  box-shadow: 0px 1px 2px #f8f8f8;
+}
+.pic {
+  width: 350px;
+}
+
+.profile img {
+  height: 500px;
+  width: 350px;
+  float: left;
+  transition: transform 0.2s, filter 0.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(70%);
+  filter: blur(0.3px);
+}
+
+.profile img:hover {
+  filter: brightness(100%);
+  filter: blur(0);
+  transform: scale(1.2);
+}
+.social-profiles {
+  height: 100px;
+  width: 350px;
+  display: block;
+  margin-left: 80px;
+}
+
+.images {
+  display: block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+.leetcode {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  width: auto;
+  border: 1px solid white;
+  border-radius: 20px;
+
+  transition: transform 0.2s ease-in-out;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+.social-img {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 40px;
+  width: auto;
+
+  border: 0.2px solid rgb(163, 154, 154);
+  border-radius: 20px;
+
+  transition: transform 0.2s ease-in-out;
+}
+.images a {
+  border: 0;
+}
+.social-profiles img:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+/* section skills                */
+
+.section-skills {
+  background-color: #242424;
+}
+
+.icon-image {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.icon-image img {
+  width: 200px;
+  height: auto;
+}
+
+.icon-title {
+  font-family: 'Lato';
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+}
+.dim-right {
+  float: right;
+  height: 295.6px;
+  width: 271.31px;
+}
+
+.dim-left {
+  float: left;
+  height: 295.6px;
+  width: 271.31px;
+}
+
+/* section projects        242424      */
+
+.section-projects {
+  background-color: #1f1d1d;
+}
+
+.project {
+  list-style: none;
+  height: 300px;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.project figure {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 250px;
+  object-fit: strech;
+}
+
+.project a {
+  background-color: #353535;
+  padding: 0;
+  display: block;
+  font-size: 80%;
+  text-align: center;
+  transition: font-size 0.2s;
+}
+
+.project a:hover,
+.project a:active {
+  background-color: #dbdbdb;
+  color: #353535;
+  font-size: 90%;
+  border: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(2, 2, 1, 0.61); /* Black see-through */
+  color: #f1f1f1;
+  width: 105%;
+  height: 80px;
+  transition: 0.5s ease;
+  padding: 30px;
+  opacity: 0;
+  font-size: 100%;
+  text-align: center;
+}
+
+.project-image:hover .overlay {
+  opacity: 1;
+}
+/* .project-image img:hover,
+.project-image img:active {
+  transform: scale(1.2);
+} */
+/* footer                   */
+
+footer {
+  background-color: #242424;
+  padding: 20px;
+}
+
+h5 {
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
