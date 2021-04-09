@@ -32,8 +32,13 @@
     height: 400px;
     width: 280px;
   }
-  .social-profiles {
+  /* .social-profiles {
     margin-left: 120px;
+  } */
+  .social-profiles {
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
   .leetcode {
     margin-top: 10px;
@@ -47,7 +52,7 @@
     height: 30px;
     width: auto;
   }
-  .images {
+  .images a {
     display: block;
     height: 30px;
     width: 30px;
@@ -64,6 +69,9 @@
   .icon-image img {
     width: 160px;
     height: auto;
+  }
+  .next {
+    margin-left: 2px;
   }
   .project {
     list-style: none;
@@ -102,17 +110,41 @@
   body {
     font-size: 16px;
   }
+  h1 {
+    margin: 0;
+    font-size: 180%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+  }
   section {
     padding: 30px 0;
   }
+  .col {
+    width: 100%;
+    margin: 0 0 1% 1.6%;
+  }
+
   p {
     font-size: 90%;
   }
-  .profile {
+
+  /* .profile {
     margin-left: 50px;
     overflow: hidden;
     height: 300px;
     width: 250px;
+  } */
+  .pic {
+    width: 100%;
+  }
+  .profile {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    height: 350px;
+    width: 280px;
   }
   .about {
     margin-right: 20px;
@@ -122,9 +154,23 @@
     height: 400px;
     width: 280px;
   }
+
+  /* .profile {
+    display: block;
+    overflow: hidden;
+    height: 300px;
+    width: 250px;
+  } */
   .social-profiles {
-    margin-left: 100px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
   }
+
+  /* .social-profiles {
+    margin: 0;
+    margin-left: 100px;
+  } */
   .leetcode {
     margin-top: 10px;
     margin-right: 5px;
@@ -148,36 +194,55 @@
     width: 130px;
     height: auto;
   }
-  .project {
-    margin-bottom: -80px;
-    position: relative;
-  }
-
   .project img {
-    width: 100%;
+    width: 50%;
     height: 150px;
     object-fit: strech;
+    display: block;
+    margin: auto;
   }
-
   .project a {
-    font-size: 75%;
+    background-color: #353535;
+    width: 50%;
+    padding: 0;
+    display: block;
+    font-size: 100%;
+    margin: auto;
   }
   .overlay {
     position: absolute;
-    top: 41%;
+    top: 41.69%;
     left: 50%;
-    font-size: 90%;
-    height: 60px;
+    font-size: 100%;
+    height: 50px;
+    width: 50%;
     padding: 20px;
+  }
+  .left {
+    float: left;
+    width: 150px;
+  }
+
+  .right {
+    float: right;
+    width: 150px;
   }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 14px;
   }
   section {
     padding: 30px 0;
+  }
+  h1 {
+    margin: 0;
+    font-size: 160%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    word-spacing: 2px;
   }
   .col {
     width: 100%;
@@ -186,13 +251,27 @@
   p {
     font-size: 80%;
   }
+  .main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 10px;
+  }
+  .main-nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .pic {
+    width: 100%;
+  }
   .profile {
-    margin-left: 130px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
     height: 250px;
     width: 200px;
   }
   .about {
+    margin-top: -20px;
     margin-right: 10px;
   }
 
@@ -200,25 +279,27 @@
     height: 350px;
     width: 200px;
   }
+
   .social-profiles {
-    margin-left: 150px;
-    margin-bottom: -40px;
+    display: flex;
+    justify-content: center;
   }
+
+  .icon-image {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
   .dim-right {
-    float: left;
-    margin-left: 95px;
     height: 189.2px;
     width: 271.31px;
   }
 
   .dim-left {
-    float: left;
-    margin-left: 95px;
-
     height: 189.2px;
     width: 271.31px;
   }
-
   .icon-image {
     width: 100%;
     text-align: center;
@@ -226,7 +307,7 @@
     margin-bottom: 40px;
   }
 
-  .project {
+  /* .project {
     margin-bottom: -80px;
     position: relative;
   }
@@ -246,24 +327,39 @@
     display: block;
     font-size: 100%;
     text-align: center;
+  } */
+
+  .project img {
+    width: 50%;
+    height: 150px;
+    object-fit: strech;
+    display: block;
+    margin: auto;
+  }
+  .project a {
+    background-color: #353535;
+    width: 50%;
+    padding: 0;
+    display: block;
+    font-size: 100%;
+    margin: auto;
   }
   .overlay {
     position: absolute;
     top: 41.69%;
     left: 50%;
     font-size: 100%;
-    margin-left: 4px;
     height: 50px;
-    width: 234px;
+    width: 50%;
     padding: 20px;
   }
   .left {
     float: left;
-    width: 200px;
+    width: 130px;
   }
 
   .right {
     float: right;
-    width: 200px;
+    width: 130px;
   }
 }

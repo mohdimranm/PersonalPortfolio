@@ -229,14 +229,29 @@ a:active {
   filter: blur(0);
   transform: scale(1.2);
 }
+/* .social-profiles {
+  height: 100px;
+  width: 100%;
+  display: block;
+  margin-left: 100px;
+} */
 .social-profiles {
   height: 100px;
-  width: 350px;
+  width: 100%;
   display: block;
-  margin-left: 80px;
+  margin-left: 75px;
 }
 
-.images {
+/* 
+.images  {
+  display: block;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-left: 15px;
+  margin-right: 5px;
+} */
+.images a {
   display: block;
   height: 40px;
   width: 40px;
@@ -301,7 +316,11 @@ a:active {
   margin-top: 10px;
   text-align: center;
 }
-.dim-right {
+
+.next {
+  margin-left: 300px;
+}
+/* .dim-right {
   float: right;
   height: 295.6px;
   width: 271.31px;
@@ -311,7 +330,7 @@ a:active {
   float: left;
   height: 295.6px;
   width: 271.31px;
-}
+} */
 
 /* section projects        242424      */
 
