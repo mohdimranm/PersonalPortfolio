@@ -110,7 +110,7 @@ p {
   color: #dbdbdb;
   position: absolute;
   font-weight: 10%;
-  width: 1140px;
+  width: 90%;
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
@@ -175,7 +175,7 @@ a:active {
   padding: 10px 20px;
   font-weight: 400;
   text-decoration: none;
-  border-radius: 200px;
+  border-radius: 20px;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 

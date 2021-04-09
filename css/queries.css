@@ -1,0 +1,269 @@
+@media only screen and (max-width: 1200px) {
+  .text-box {
+    padding: 0 2%;
+  }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 40px 0;
+  }
+  p {
+    font-size: 90%;
+  }
+  .profile {
+    margin-left: 60px;
+    overflow: hidden;
+    height: 400px;
+    width: 280px;
+    box-shadow: 0px 1px 2px #f8f8f8;
+  }
+  .about {
+    margin-right: 20px;
+  }
+
+  .profile img {
+    height: 400px;
+    width: 280px;
+  }
+  .social-profiles {
+    margin-left: 130px;
+  }
+  .leetcode {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 30px;
+    width: auto;
+  }
+  .social-img {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: auto;
+  }
+  .images {
+    display: block;
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  .icon-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .icon-image img {
+    width: 160px;
+    height: auto;
+  }
+  .project {
+    list-style: none;
+    height: 300px;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    margin-bottom: -30px;
+    position: relative;
+  }
+
+  .project figure {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .project img {
+    width: 100%;
+    height: 200px;
+    object-fit: strech;
+  }
+
+  .project a {
+    font-size: 75%;
+  }
+  .overlay {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  p {
+    font-size: 90%;
+  }
+  .profile {
+    margin-left: 50px;
+    overflow: hidden;
+    height: 300px;
+    width: 250px;
+  }
+  .about {
+    margin-right: 20px;
+  }
+
+  .profile img {
+    height: 400px;
+    width: 280px;
+  }
+  .social-profiles {
+    margin-left: 100px;
+  }
+  .leetcode {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 30px;
+    width: auto;
+  }
+  .social-img {
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: auto;
+  }
+
+  .icon-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .icon-image img {
+    width: 130px;
+    height: auto;
+  }
+  .project {
+    margin-bottom: -80px;
+    position: relative;
+  }
+
+  .project img {
+    width: 100%;
+    height: 150px;
+    object-fit: strech;
+  }
+
+  .project a {
+    font-size: 75%;
+  }
+  .overlay {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    font-size: 90%;
+    height: 60px;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  body {
+    font-size: 14px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .col {
+    width: 100%;
+    margin: 0 0 1% 1.6%;
+  }
+  p {
+    font-size: 80%;
+  }
+  .profile {
+    margin-left: 130px;
+    overflow: hidden;
+    height: 250px;
+    width: 200px;
+  }
+  .about {
+    margin-right: 10px;
+  }
+
+  .profile img {
+    height: 350px;
+    width: 200px;
+  }
+  .social-profiles {
+    margin-left: 150px;
+    margin-bottom: -40px;
+  }
+  .dim-right {
+    float: left;
+    margin-left: 95px;
+    height: 189.2px;
+    width: 271.31px;
+  }
+
+  .dim-left {
+    float: left;
+    margin-left: 95px;
+
+    height: 189.2px;
+    width: 271.31px;
+  }
+
+  .icon-image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .project {
+    margin-bottom: -80px;
+    position: relative;
+  }
+
+  .project img {
+    width: 50%;
+    height: 150px;
+    object-fit: strech;
+    margin-left: 120px;
+  }
+
+  .project a {
+    background-color: #353535;
+    margin-left: 119px;
+    width: 234px;
+    padding: 0;
+    display: block;
+    font-size: 100%;
+    text-align: center;
+  }
+  .overlay {
+    position: absolute;
+    top: 41.69%;
+    left: 50%;
+    font-size: 100%;
+    margin-left: 4px;
+    height: 50px;
+    width: 234px;
+    padding: 20px;
+  }
+  .left {
+    float: left;
+    width: 200px;
+  }
+
+  .right {
+    float: right;
+    width: 200px;
+  }
+}
