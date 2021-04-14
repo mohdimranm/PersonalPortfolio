@@ -34,6 +34,17 @@ body {
 
 section {
   padding: 50px;
+  padding-top: 60px;
+  transition: transform 1s, opacity 1s;
+}
+
+.section-home {
+  padding: 0;
+  transition: transform 1s, opacity 1s;
+}
+.section_hidden {
+  opacity: 0;
+  transform: translateY(60px);
 }
 
 header {
@@ -121,10 +132,22 @@ p {
 }
 
 /***                    NAVIGATION                               ***/
+.nav {
+  height: 70px;
+  width: 100%;
+  float: right;
+  z-index: 300;
+}
+
 .main-nav {
   float: right;
   list-style: none;
   margin-top: 30px;
+}
+.sticky {
+  position: fixed;
+  background-color: rgba(31, 31, 31, 0.767);
+  font-size: 90%;
 }
 
 .main-nav li {
@@ -301,7 +324,7 @@ a:active {
 .icon-image {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 

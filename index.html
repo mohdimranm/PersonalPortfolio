@@ -22,32 +22,51 @@
       rel="stylesheet"
     />
     <link rel="icon" href="img/icon.png" />
+
+    <script defer src="script.js"></script>
+
     <title>Mohd Imran</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="row">
-          <ul class="main-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-          </ul>
+    <section class="section-home">
+      <header class="header">
+        <nav class="nav">
+          <div class="row">
+            <ul class="main-nav">
+              <li class="nav_item">
+                <a class="nav_link" href="#section-home">Home</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#section-about">About</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#section-skills">Skills</a>
+              </li>
+              <li class="nav_item">
+                <a class="nav_link" href="#section-projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="text-box">
+          <h1>
+            Hi. I'm <span class="edit"> Mohd Imran</span>. <br />
+            Please take a look around
+          </h1>
+          <a
+            href="https://drive.google.com/file/d/1IrQzthFLY6nMWr1hQwdRl8nV4gmbcPKE/view"
+            target="_blank"
+            class="btn btn-down"
+            >Download CV</a
+          >
+          <a href="#" class="btn-show"
+            >Show more <i class="ion-ios-arrow-down icon-small"></i>
+          </a>
         </div>
-      </nav>
-      <div class="text-box">
-        <h1>
-          Hi. I'm <span class="edit"> Mohd Imran</span>. <br />
-          Please take a look around
-        </h1>
-        <a href="#" class="btn btn-down">Download CV</a>
-        <a href="#" class="btn-show">Show more</a>
-        <i class="ion-ios-arrow-down icon-small"></i>
-      </div>
-    </header>
+      </header>
+    </section>
 
-    <section class="section-about">
+    <section class="sect section-about">
       <div class="row">
         <h2>About</h2>
       </div>
@@ -60,12 +79,14 @@
           </div>
           <div class="social-profiles">
             <div class="images">
-              <a href="">
+              <a href="https://leetcode.com/mohd23/" target="_blank">
                 <img src="img/leetcode_1.png" alt="leetcode" class="leetcode"
               /></a>
             </div>
             <div class="images">
-              <a href=""
+              <a
+                href="https://www.linkedin.com/in/mohd-imran-71938b184/"
+                target="_blank"
                 ><img
                   src="img/linkedin (2).png"
                   alt="linkedin"
@@ -74,7 +95,7 @@
               </a>
             </div>
             <div class="images">
-              <a href=""
+              <a href="https://github.com/mohdimranm" target="_blank"
                 ><img src="img/github.png" alt="github" class="social-img"
               /></a>
             </div>
@@ -102,7 +123,7 @@
         </div>
       </div>
     </section>
-    <section class="section-skills">
+    <section class="sect section-skills">
       <h2>Skills</h2>
       <div class="row">
         <div class="col span-1-of-4">
@@ -146,7 +167,7 @@
         </div>
       </div>
     </section>
-    <section class="section-projects">
+    <section class="sect section-projects">
       <h2>Projects</h2>
       <div class="row">
         <div class="col span-1-of-4">
@@ -155,7 +176,9 @@
               <img src="img/Forkify.png" alt="forkify" />
               <div class="overlay">Forkify</div>
             </figure>
-            <a href="#"> <i class="ion-social-github icon"></i>GitHub</a>
+            <a href="https://github.com/mohdimranm/forkify" target="_blank">
+              <i class="ion-social-github icon"></i>GitHub</a
+            >
           </div>
         </div>
         <div class="col span-1-of-4">
@@ -165,7 +188,9 @@
               <div class="overlay">Banker's App</div>
             </figure>
 
-            <a href="#"> <i class="ion-social-github icon"></i>GitHub</a>
+            <a href="https://github.com/mohdimranm/Bankist.git" target="_blank">
+              <i class="ion-social-github icon"></i>GitHub</a
+            >
           </div>
         </div>
         <div class="col span-1-of-4">
@@ -174,7 +199,12 @@
               <img src="img/machinetranslation.jpg" alt="machine" />
               <div class="overlay">Machine Translation</div>
             </figure>
-            <a href="#"> <i class="ion-social-github icon"></i>GitHub</a>
+            <a
+              href="https://github.com/mohdimranm/Machine-Translation"
+              target="_blank"
+            >
+              <i class="ion-social-github icon"></i>GitHub</a
+            >
           </div>
         </div>
         <div class="col span-1-of-4">
@@ -194,7 +224,12 @@
               <img src="img/dogbreed.jpg" alt="dogbreed" />
               <div class="overlay">Dog Breed Classifier</div>
             </figure>
-            <a href="#"> <i class="ion-social-github icon"></i>GitHub</a>
+            <a
+              href="https://github.com/mohdimranm/Dog-Breed-Identifier"
+              target="_blank"
+            >
+              <i class="ion-social-github icon"></i>GitHub</a
+            >
           </div>
         </div>
         <div class="col span-1-of-4">
@@ -203,7 +238,12 @@
               <img src="img/digit.jpg" alt="digit" />
               <div class="overlay">Digit Recognizer</div>
             </figure>
-            <a href="#"> <i class="ion-social-github icon"></i>GitHub</a>
+            <a
+              href="https://github.com/mohdimranm/Digit-Recognition-using-CNN"
+              target="_blank"
+            >
+              <i class="ion-social-github icon"></i>GitHub</a
+            >
           </div>
         </div>
       </div>
